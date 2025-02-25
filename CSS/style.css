@@ -45,6 +45,7 @@ header {
   border: none;
   font-size: 24px;
   cursor: pointer;
+  color: black;
 }
 
 .nav-list {
@@ -60,6 +61,12 @@ header {
 .nav-list li a {
   color: inherit;
   text-decoration: none;
+}
+
+header nav {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 /* ==================== SEÇÕES ==================== */
@@ -203,7 +210,7 @@ form input {
 
 @media (max-width: 480px) {
   .message {
-    width: 380px;
+    width: 295px;
     font-size: 0.8rem;
     white-space: unset;
   }
@@ -256,6 +263,11 @@ form input {
   width: 40px;
 }
 
+.links{
+  display: flex;
+  gap: 10px;
+}
+
 /* ==================== BOTÃO PADRÃO ==================== */
 .btn {
   padding: 10px 20px;
@@ -291,6 +303,7 @@ form input {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    gap: 5px;
   }
 
   .nav-list.active {
@@ -322,6 +335,10 @@ form input {
     font-size: 24px;
   }
 
+  h3{
+    font-size: 18px;
+  }
+
   p {
     font-size: 14px;
   }
@@ -349,6 +366,7 @@ form input {
   display: flex;
   justify-content: center;
   align-items: center;
+  align-content: center;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -359,7 +377,17 @@ form input {
   height: 100%;
   object-fit: cover;
 }
+.swiper-slide h3 {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
 
+.swiper-slide p{
+  color: white;
+  position: relative;
+  z-index: 2;
+}
 /* ==================== Dark Mode ==================== */
 
 .dark-header{
@@ -381,9 +409,45 @@ form input {
 }
 
 .swiper-slide-dark{
-  background: #484848;
+  background: #2a2a2a;
 }
 
 .input-dark{
   background: #2a2a2a;
 }
+.menu-dark{
+  color: white
+}
+
+/* ==================== Serviços ==================== */
+
+.servico1 {
+  position: relative;
+  background-image: url('CSS/utils/images/linguagens/background.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white; 
+}
+.servico2 {
+  position: relative;
+  background-image: url('CSS/utils/images/linguagens/background.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white; 
+}
+
+
+.swiper-slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 1;
+  border-radius: 10px;
+}
+

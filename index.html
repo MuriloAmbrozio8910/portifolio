@@ -37,7 +37,7 @@
 
   <section id="sobre-mim">
     <div class="sobre-container">
-      <img src="CSS/utils/images/perfil.jpg" alt="Minha Foto" class="perfil-foto">
+      <img src="/CSS/utils/images/perfil.jpg" alt="Minha Foto" class="perfil-foto">
       <div class="sobre-texto">
         <h2>Sobre Mim</h2>
         <p>Sou um desenvolvedor apaixonado por criar experiências incríveis na web.
@@ -51,9 +51,11 @@
         <div class="images">
           <div class="images">
             <a href="#contato" class="btn">Entre em Contato</a>
-            <a href="https://wa.me/5516994386974" class="img-circle"><img src="CSS/utils/images/contatos/whatsapp.png" alt="WhatsApp"></a>
-            <a href="https://github.com/MuriloAmbrozio8910" class="img-circle"><img src="CSS/utils/images/contatos/github.png" alt="GitHub"></a>
-            <a href="" class="img-circle"><img src="CSS/utils/images/contatos/linkedin.png" alt="LinkedIn"></a>
+            <div class="links">
+              <a href="https://wa.me/5516994386974" class="img-circle"><img src="/CSS/utils/images/contatos/whatsapp.png" alt="WhatsApp"></a>
+              <a href="https://github.com/MuriloAmbrozio8910" class="img-circle"><img src="/CSS/utils/images/contatos/github.png" alt="GitHub"></a>
+              <a href="" class="img-circle"><img src="/CSS/utils/images/contatos/linkedin.png" alt="LinkedIn"></a>
+            </div>
           </div>
         </div>
       </div>
@@ -76,8 +78,14 @@
     <h2>Serviços que estou oferecendo</h2>
     <div class="swiper trabalhos">
       <div class="swiper-wrapper">
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide servico1">
+          <h3>Criação & Personalização do seu site</h3>
+          <p>
+            Transforme sua presença online com um site profissional, moderno e totalmente personalizado para atender às suas necessidades. Desenvolvo soluções sob medida, garantindo que seu site tenha um design único, responsivo e otimizado para proporcionar a melhor experiência ao usuário.
+            Seja para um novo projeto ou para aprimorar um site existente, cuido de todos os detalhes, desde a estrutura visual até funcionalidades exclusivas, alinhadas ao seu negócio. Meu objetivo é criar um site que não apenas represente sua marca, mas também gere resultados.
+          </p>
+        </div>
+        <div class="swiper-slide servico2">Slide 2</div>
         <div class="swiper-slide">Slide 3</div>
       </div>
       <div class="swiper-pagination"></div>
@@ -96,7 +104,7 @@
     </form>
   </section>
 
-  <script src="js/script.js"></script>
+  <script src="/js/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
     var swiper = new Swiper(".projetos", {

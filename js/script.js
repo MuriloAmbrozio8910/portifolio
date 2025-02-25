@@ -10,6 +10,7 @@ const Dark = document.getElementById("switch-shadow")
 function aplicarTema(isDark) {
   document.querySelector("header").classList.toggle("dark-header", isDark)
   document.querySelector("body").classList.toggle("dark-body", isDark)
+  document.querySelector(".menu-toggle").classList.toggle("menu-dark", isDark)
   document.querySelectorAll("section").forEach(section => {section.classList.toggle("section-dark", isDark)});
   document.querySelectorAll(".btn").forEach(btn => {btn.classList.toggle("btn-dark", isDark)});
   document.querySelectorAll("input").forEach(input => {input.classList.toggle("input-dark", isDark)});
