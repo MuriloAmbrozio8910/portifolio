@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio de Murilo Ambrozio, desenvolvedor web Frontend e Backend com experiência em criação de interfaces modernas e análise de dados.">
+  <meta name="keywords" content="desenvolvedor web, frontend, backend, análise de dados, Google Ads, Facebook Ads, freelancer">
+  <meta name="author" content="Murilo Ambrozio">
+  <title>Meu Portfólio</title>
+  <link rel="stylesheet" href="/CSS/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Murilo</h1>
+    <nav>
+      <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+      <ul class="nav-list">
+        <li><a href="#sobre">Sobre Mim</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#trabalhos">Trabalhos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="switch__container">
+      <input id="switch-shadow" class="switch switch--shadow" type="checkbox" />
+      <label for="switch-shadow"></label>
+    </div>
+  </header>
+
+  <section id="home">
+    <h2>Desenvolvedor Web Freelancer</h2>
+    <p class="message">Crio soluções digitais modernas e funcionais para impulsionar seu negócio.</p>
+  </section>
+
+  <section id="sobre-mim">
+    <div class="sobre-container">
+      <img src="../CSS/utils/images/perfil.jpg" alt="Minha Foto" class="perfil-foto">
+      <div class="sobre-texto">
+        <h2>Sobre Mim</h2>
+        <p>Sou um desenvolvedor apaixonado por criar experiências incríveis na web.
+          Trabalho com HTML, CSS e JavaScript para construir interfaces modernas e responsivas.
+          Sempre estou estudando novas tecnologias para melhorar minhas habilidades e entregar os melhores projetos.</p>
+
+        <p>Além do conhecimento em programação, tenho habilidades com Google Ads, Facebook Ads, Google Analytics
+          e faço Dashboards e análises de dados para ajudar empresas a tomarem melhores decisões.</p>
+
+        <p>Se você busca um desenvolvedor criativo e dedicado, entre em contato comigo!</p>
+        <div class="images">
+          <div class="images">
+            <a href="#contato" class="btn">Entre em Contato</a>
+            <a href="https://wa.me/seunumerodetelefone" class="img-circle"><img src="../CSS/utils/images/contatos/whatsapp.png" alt="WhatsApp"></a>
+            <a href="https://github.com/seuusuario" class="img-circle"><img src="../CSS/utils/images/contatos/github.png" alt="GitHub"></a>
+            <a href="https://linkedin.com/in/seuperfil" class="img-circle"><img src="../CSS/utils/images/contatos/linkedin.png" alt="LinkedIn"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projetos">
+    <h2>Meus Projetos</h2>
+    <div class="swiper projetos">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <section id="trabalhos">
+    <h2>Serviços que estou oferecendo</h2>
+    <div class="swiper trabalhos">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Vamos discutir seu projeto</h2>
+    <p>Sempre disponível para trabalhar como freelancer caso o projeto certo apareça. <br> Sinta-se à vontade para entrar em contato comigo.</p>
+    <form style="width: 100%;" action="https://formspree.io/f/movjoral" method="POST">
+      <input type="text" name="nome" placeholder="Seu Nome" required />
+      <input type="email" name="email" placeholder="Seu Email" required />
+      <input type="text" name="assunto" placeholder="Assunto" required />
+      <textarea name="message" placeholder="Sua Mensagem" required></textarea>
+      <button class="btn" type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <script src="/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".projetos", {
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true,
+  },
+});
+var swiper = new Swiper(".trabalhos", {
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true,
+  },
+});
+  </script>
+</body>
+
+</html>
