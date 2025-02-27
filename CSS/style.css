@@ -388,7 +388,7 @@ form input {
   position: relative;
   z-index: 2;
 }
-/* ==================== Dark Mode ==================== */
+/* ==================== Dark dasd ==================== */
 
 .dark-header{
   background: #484848;
@@ -423,7 +423,7 @@ form input {
 
 .servico1 {
   position: relative;
-  background-image: url('utils/images/linguagens/background.gif');
+  background-image: url('./utils/images/linguagens/background.gif');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -431,14 +431,12 @@ form input {
 }
 .servico2 {
   position: relative;
-  background-image: url('utils/images/linguagens/background.gif');
+  background-image: url('./utils/images/linguagens/lookerstudio.gif');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   color: white; 
 }
-
-
 .swiper-slide::before {
   content: "";
   position: absolute;
@@ -450,3 +448,4 @@ form input {
   z-index: 1;
   border-radius: 10px;
 }
+

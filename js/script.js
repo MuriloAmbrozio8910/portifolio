@@ -4,7 +4,7 @@ document.querySelector('.menu-toggle').addEventListener('click', function () {
   document.querySelector('.nav-list').classList.toggle('active');
 });
 
-
+const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 const Dark = document.getElementById("switch-shadow")
 
 function aplicarTema(isDark) {
@@ -33,7 +33,12 @@ document.addEventListener("DOMContentLoaded", function () {
       alert("Mensagem enviada com sucesso!");
   });
 
-  const Tema = localStorage.getItem("theme") === "Dark";
-  Dark.checked = Tema;
-  aplicarTema(Tema);
+  let Tema = localStorage.getItem("theme")
+  if (Tema === null){
+    Tema = prefersDarkScheme.matches ? "Dark" : "Light";
+  }
+
+  const isDarkMode = Tema === "Dark"
+  Dark.checked = isDarkMode;
+  aplicarTema(isDarkMode);
 });
